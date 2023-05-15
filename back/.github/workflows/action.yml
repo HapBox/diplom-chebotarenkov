@@ -1,0 +1,25 @@
+on:
+  push:
+    branches:
+      - main
+      - dev
+
+jobs:
+  reload_docker_container:
+    runs-on: [self-hosted, linux]
+    name: Start CI/CD
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Copy env
+        run: cp /env/agregator-back/.env /actions-runner/_work/agregator_back/agregator_back
+
+      - name: Rebuild
+        run: sudo DOCKER_BUILDKIT=1 docker build . -t agregator_back:latest
+
+      - name: Reload
+        run: sudo docker-compose up -d
+
+      - name: Clean
+        run: sudo docker rmi --force $(sudo docker images -q --filter "dangling=true")
+        continue-on-error: true

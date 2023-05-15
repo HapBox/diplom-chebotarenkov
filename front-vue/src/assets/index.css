@@ -1,0 +1,108 @@
+body {
+    margin: 0px;
+    font-family: Roboto, Arial, sans-serif;
+    background-color: darkseagreen;
+    text-align: center;
+  }
+  
+  .done {
+    background-color: crimson;
+  }
+  
+  #nav {
+    background-color: #2f4f4f;
+    position: fixed; 
+    padding: 10px;
+    top: 0px;
+    width: 100%;
+  }
+
+  .main-layout {
+    margin-top: 60px;
+  }
+  
+  #nav a,
+  .router-link {
+    color: #e7e9eb;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 40px;
+    user-select: none;
+  }
+  
+  .router-link-exact-active {
+    background-color: #3c6565;
+    padding: 10px;
+  }
+  
+  .task-item {
+    /*  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); */
+    box-shadow: 2px 4px 4px black;
+    background: rgb(114, 152, 114);
+    list-style-type: none;
+    border-radius: 12px;
+    border: 2px black solid;
+    margin-top: 12px;
+    margin-right: 20px;
+    padding: 4px;
+  }
+  
+  .separator hr {
+    margin: -30px auto 10px;
+    padding: 0;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    width: 95%;
+  }
+  
+  .title-create {
+      font-size: 1.4rem;
+      font-weight: bold;
+  }
+  
+  .create-card {
+    box-shadow: 2px 4px 4px black;
+    background: rgb(114, 152, 114);
+    list-style-type: none;
+    border-radius: 12px;
+    border: 2px black solid;
+    margin-top: 12px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 4px;
+  }
+  
+  .form-field {
+      padding: 2px;
+  }
+  
+  li {
+    list-style-type: none;
+  
+  }
+  
+  .raport {
+    box-shadow: 2px 4px 4px black;
+    background: rgb(114, 152, 114);
+    list-style-type: none;
+    border-radius: 12px;
+    border: 2px black solid;
+    margin-top: 12px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 4px;
+  }
+  
+  .create-raport {
+    box-shadow: 2px 4px 4px black;
+    background: rgb(114, 152, 114);
+    list-style-type: none;
+    border-radius: 12px;
+    border: 2px black solid;
+    margin-top: 12px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 4px;
+  }

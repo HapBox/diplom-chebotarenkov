@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  agregator_back:
+    restart: unless-stopped
+    image: agregator_back:latest
+    env_file:
+      - .env
+    volumes:
+      - ./public:/app/public
+    ports:
+      - '3300:3000'
+
+networks:
+  default:
+    external: true
+    name: def-net
